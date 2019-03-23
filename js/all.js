@@ -43,19 +43,7 @@ $(".l_nav_close, .overlay").click(function(){
 
 
 
-// scroll Top
 
-var scrolltop = document.querySelector('.e_scroll_top').classList;
-var lastScrollY = 0;
-window.addEventListener('scroll', function(){
-  var st = this.scrollY;
-  if( st < lastScrollY) {
-    scrolltop.add('_close');
-  }else{
-    scrolltop.remove('_close');
-  }
-  lastScrollY = st;
-});
 
 
 
@@ -73,4 +61,19 @@ $('a[href*="#"]:not([href="#"])').click(function() {
     }
     }
     });
+
+
+// scroll Top
+
+var scrolltop = document.querySelector('.e_scroll_top').classList;
+var lastScrollY = 0;
+window.addEventListener('scroll', function(){
+  var st = this.scrollY;
+  if( st < lastScrollY) {
+    scrolltop.add('_close');
+  }else{
+    scrolltop.remove('_close');
+  }
+  lastScrollY = st;
+});
 
