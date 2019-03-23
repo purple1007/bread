@@ -41,9 +41,7 @@ $(".l_nav_close, .overlay").click(function(){
         scale:0.9
     });
 
-    ScrollReveal().reveal('.e_news_card, .product_category_card', {
-        interval: 200
-    });
+
 
 // scroll Top
 
@@ -52,24 +50,13 @@ var lastScrollY = 0;
 window.addEventListener('scroll', function(){
   var st = this.scrollY;
   if( st < lastScrollY) {
-    scrolltop.remove('_close');
-  }else{
     scrolltop.add('_close');
+  }else{
+    scrolltop.remove('_close');
   }
   lastScrollY = st;
 });
 
-
-// $(window).scroll(function(){
-// 			    var scrollVal = $(this).scrollTop();
-// 			    if ( scrollVal >= 75 ) {
-// 			    $(".e_scroll_top").css('display','block');
-// 			    }
-// 			    else {
-// 			    $(".e_scroll_top").css('display','none');
-// 			    }
-// 			  });
-// 		    $(window).trigger("scroll");
 
 
 // 導覽列連結到頁面錨點
