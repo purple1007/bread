@@ -964,7 +964,7 @@ footer {
     width: 80%; }
   .e_product_category_card:hover {
     background-image: url("../img/product/category_bg.svg");
-    background-size: 100%; }
+    background-size: 90%; }
     .e_product_category_card:hover:hover {
       -webkit-transition: 0.3s ease;
       -o-transition: 0.3s ease;
@@ -1221,6 +1221,8 @@ footer {
     bottom: 10px;
     right: 0;
     z-index: 0; }
+  .p_index_product .e_product_category_card:hover {
+    background-size: 0px; }
   .p_index_product .e_titlebox {
     margin-bottom: 30px; }
   .p_index_product figure:last-child {
