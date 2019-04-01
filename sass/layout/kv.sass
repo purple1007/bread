@@ -1,0 +1,55 @@
+/* ----- KV/Banner ----- */
+
+.l_kv
+	width: 100%
+	height: 700px
+	overflow: hidden
+	position: relative
+	z-index: -1
+
+	&:before
+		content: ""
+		position: absolute
+		bottom: -1px
+		left: 0px
+		background-image: url('../img/hero_cover.svg')
+		background-size: cover
+		background-position: center bottom
+		background-repeat: no-repeat
+		height: 0
+		width: 100%
+		z-index: 1
+		padding-bottom: 10%
+
+
+
+.l_photobox
+	top: 0
+	width: 100%
+	height: 100%
+	left: 0
+	position: absolute
+	background-repeat: no-repeat
+	animation: kv_bg 2s linear 1 forwards
+	background-position: center 
+	background-size: cover
+    
+
+
+@keyframes kv_bg
+	0% 
+		transform: scale(1)
+		
+	100%
+		transform: scale(1.05)
+
+
+/* ---- KV RWD ---- */
+
+@media (max-width: 768px)
+	.l_kv
+		height: 550px
+
+@media (max-width: 330px)
+	.l_kv
+		height: 400px

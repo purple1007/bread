@@ -1,0 +1,57 @@
+/* ------ BTN ----- */
+// 按鈕
+@mixin btn
+  display: inline-block
+  padding: 10px 30px
+  border-radius: 50px
+  cursor: pointer
+  transition: 0.2s ease
+
+
+
+.btn
+  &_main
+    +btn
+    background-color: $maincolor
+    color: #fff
+    &:hover
+      background-color: #8FA1AD
+    
+    &:active
+      background-color: #566774
+    
+    
+  &_light
+    +btn
+    background-color: $gray
+    
+    &:hover
+      background-color: #CED3D5
+    
+    &:active
+      background-color: #B6C3C9
+    
+    
+  &_border
+    &_readmore
+      +btn
+      box-sizing: border-box
+      border: 2px solid #fff
+      color: #fff
+      margin-top: 0px
+
+      &:hover
+        background-color: rgba(255,255,255,0.4)
+      &:active
+        background-color: rgba(255,255,255,0.2)
+
+    &_invoice
+      +btn
+      border: 2px solid $gray
+      background-color: $gray
+      margin-top: 0px
+      &:hover
+        border: 2px solid $maincolor
+      &:active
+        background-color: $maincolor
+        color: #fff

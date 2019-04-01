@@ -1,0 +1,61 @@
+/* ------ Porduct card ----- */
+
+.e_product_card
+	display: flex
+	text-align: center
+	flex-direction: column
+	padding: 5px
+	+trans_03s
+
+	.e_product_card_pic
+		height: 180px
+		display: flex
+		justify-content: center
+		align-items: center
+		position: relative
+
+		&:after
+			content: ""
+			background-image: url('../img/product/product_bg.svg')
+			background-position: center
+			background-size: 75%
+			background-repeat: no-repeat
+			height: 100%
+			width: 100%
+			position: absolute
+			z-index: -1
+			opacity: 0
+			+trans_03s
+
+		img
+			width: 80%
+			transform: rotate(-20deg)
+			+trans_03s
+
+
+
+	.e_product_card_name
+		font-weight: 500
+		font-size: 1.2rem
+		cursor: pointer
+
+	.e_product_card_price
+		margin-top: 10px
+		font-size: 1.2rem
+		font-weight: 700
+
+	&:hover
+		+hover_red
+		.e_product_card_pic
+			img
+				transform: rotate(0deg)
+
+			&:after
+				opacity: 1
+
+
+
+
+
+
+

@@ -1,0 +1,150 @@
+extends layout.pug
+block content
+	// ------------- index begin ---------------
+
+	// -----  kv
+	section.l_kv#top
+		.l_photobox(style="background-image: url('img/index/hero.png')")
+
+
+	section.p_index_news
+		.p_newsbox.w1200
+			p.p_news_date Mon.16
+			a.p_news_title 麵包出爐囉！ 全麥麵包新上市！...
+
+	section.p_index_about
+		.w1200
+			.e_titlebox.reveal_bottom
+				img.e_title_icon(src="img/about_icon.svg")
+				.e_title
+					h1 關於我們
+					h1.enh1 About us
+
+			figure.p_index_about_1.reveal_bottom
+				img(src="img/index/img_1.png")
+				article
+					h2 職人手作
+					p 山用且省日以有四筆長，許字樣升河功校保負開信我樣優是年親特王消果響道字朋她民常不，開字解大頭各臉葉不達再情大正覺下卻小灣有師環然開一陸下，平果他家不都語然們，花見有不朋然起邊連 ……
+
+			figure.p_index_about_2.reveal_bottom
+				img(src="img/index/img_2.png")
+				article
+					h2 天然食材
+					p 山用且省日以有四筆長，許字樣升河功校保負開信我樣優是年親特王消果響道字朋她民常不，開字解大頭各臉葉不達再情大正覺下卻小灣有師環然開一陸下，平果他家不都語然們，花見有不朋然起邊連 ……
+
+	section.p_index_product
+		.w1200
+			.e_titlebox.reveal_bottom
+				img.e_title_icon(src="img/product_icon.svg")
+				.e_title
+					h1 產品
+					h1.enh1 Product List
+
+			figure.col33.e_product_category_card.reveal_bottom
+				a(href="product.html")
+					img(src="img/product/product_a.png")
+					.e_product_category_title
+						p 可頌系列
+						p Croissant
+
+			figure.col33.e_product_category_card.reveal_bottom
+				a(href="product.html")
+					img(src="img/product/product_b.png")
+					.e_product_category_title
+						p 吐司系列
+						p Toast
+
+			figure.col33.e_product_category_card.reveal_bottom
+				a(href="product.html")
+					img(src="img/product/product_c.png")
+					.e_product_category_title
+						p 全麥麵包系列
+						p Whole Wheat Bread
+
+	section.p_index_news_2
+		.w1200
+			.e_titlebox.reveal_bottom
+				.e_title
+					h1 最新消息
+					h1.enh1 News
+
+			.p_index_news_2_body
+				figure(href="#").col33
+					.e_news_card.reveal_bottom
+						.e_news_card_imgcover(style="background-image: url('img/news/news_banner_1.png')")
+							.overlay
+								a.btn_border_readmore(href="#") Readmore
+						.e_news_card_tabbox
+							p.e_news_card_tab 店舖活動
+							p.e_news_card_date 2019.02.09 Sat
+						a(href="#").e_news_card_title 全新系列麵包開催！
+
+				figure(href="#").col33
+					.e_news_card.reveal_bottom
+						.e_news_card_imgcover(style="background-image: url('img/news/news_banner_2.png')")
+							.overlay
+								a.btn_border_readmore(href="#") Readmore
+						.e_news_card_tabbox
+							p.e_news_card_tab 其他
+							p.e_news_card_date 2019.02.12 Mon
+						a(href="#").e_news_card_title 03月份麵包烘焙課程開放報名！
+
+				figure(href="#").col33
+					.e_news_card.reveal_bottom
+						.e_news_card_imgcover(style="background-image: url('img/news/news_banner_3.png')")
+							.overlay
+								a.btn_border_readmore(href="#") Readmore
+						.e_news_card_tabbox
+							p.e_news_card_tab 店舖活動
+							p.e_news_card_date 2019.02.15 Tue
+						a(href="#").e_news_card_title 經典店低卡麵包重新上架販售！
+
+			.p_index_news_2_more
+				a.btn_main 更多消息
+	section.l_map.reveal_bottom
+		.l_map_pin_box
+			.l_map_pin_text_body
+				.l_map_pin_text
+					p 我們在這裡喔！
+			img.l_map_pin_icon(src="http://debbyimg.updog.co/map_pin.svg")
+
+
+
+
+
+
+
+
+
+
+
+
+block page_js
+	// ------------- index js ---------------
+	script(type='text/javascript').
+
+			// index nav 切換
+		   $(window).scroll(function(){
+			    var scrollVal = $(this).scrollTop();
+			    if ( scrollVal <= 75 ) {
+			    $("nav").addClass("transparent_nav");
+			    }
+			    else {
+			    $("nav").removeClass("transparent_nav");
+			    }
+			  });
+		    $(window).trigger("scroll");
+
+
+			// 刪除 KV 原本上面遮罩
+		    var style = document.createElement("style");
+		    document.head.appendChild(style);
+		    sheet = style.sheet;
+		    sheet.addRule('.l_kv::before','display: none');
+		    sheet.insertRule('.l_kv::before {display: none}',0);
+
+		    ScrollReveal().reveal('.e_news_card, .product_category_card', {interval: 200}
+		    );
+
+
+

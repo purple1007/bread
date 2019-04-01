@@ -1,0 +1,177 @@
+/* ----- HEADER ----- */
+
+
+/* ---- nav ---- */
+nav
+	width: 100%
+	padding-top: 25px
+	padding-bottom: 25px
+	box-shadow: 0px 3px 10px rgba(78,50,35,0.2)
+	background-color: $bg
+	position: fixed
+	top: 0
+	z-index: 2
+	+trans_02s
+
+.l_nav
+	position: relative
+	.l_lg_nav
+		width: 100%
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+		ul ,& li
+			display: flex
+			justify-content: space-between
+
+		li>a
+			+hover_border
+		ul
+			width: 100%
+		hr
+			display: none
+
+	.l_mobie_nav ,.l_menu_social ,.l_nav_close
+		display: none
+
+	.overlay
+		width: 100%
+		height: 100%
+		display: none
+		top: 0
+		left: 0
+		position: fixed
+		background-color: rgba(255, 255, 255, 0)
+	
+	.overlay.active
+		display: block
+
+.l_logobox
+	margin-left: 10%
+	margin-right: 10%
+	position: relative
+	width: 30px
+	.l_logo-white
+
+		display: none
+
+	img
+		position: absolute
+		left: 0
+		top: 0
+		transform: translate(-30%,-50%)
+
+
+/* ---- index nav ---- */
+
+.transparent_nav
+	background-color: transparent
+	background: linear-gradient(180deg, rgba(72, 36, 27, 0.5) 0%, rgba(72, 36, 27, 0) 95%)
+	color: white
+	box-shadow: none
+
+	.l_logobox
+
+		.l_logo-primary
+			display: none
+
+		.l_logo-white
+			display: block
+
+
+
+
+/* ---- mobile nav ---- */
+
+@media (max-width: 768px)
+	.l_logobox
+		margin-left: 5%
+		margin-right: 5%
+
+
+
+@media (max-width: 680px)
+	.l_nav
+		.l_mobie_nav
+			display: flex
+			align-items: center
+			justify-content: center
+			padding: 13px
+
+		.l_hamburger
+			position: absolute
+			right: 0px
+			// color: $maincolor
+			font-size: 1.5rem
+			cursor: pointer
+			+hover_red
+
+
+		.l_lg_nav
+			display: flex
+			position: fixed
+			width: 350px
+			height: 100vh
+			top: 0
+			left: -400px
+			margin-right: 0
+			flex-direction: column
+			justify-content: flex-start
+			align-items: flex-start
+			color: $maincolor
+			padding: 35px
+			z-index: 2
+			+trans_03s
+
+
+			ul ,& li
+				width: fit-content
+				flex-direction: column
+				justify-content: flex-start
+			li
+				margin-bottom: 20px
+	
+
+			.l_logobox
+				display: none
+
+
+		.l_lg_nav_active
+			left: 0px
+			background-color: $bg
+			box-shadow: 0px 3px 10px rgba(78,50,35,0.2)
+			
+
+			.l_nav_close
+				display: block
+				position: absolute
+				right: 30px
+				top: 30px
+				font-size: 1.5rem
+				cursor: pointer
+				+hover_red
+
+			hr
+				display: block
+				border: 1px solid
+				width: 100%
+				opacity: 0.3
+				margin-top: 20px
+				margin-bottom: 30px
+
+
+			.l_menu_social
+			    display: flex
+		    	justify-content: center
+		    	margin-top: 20px
+		    	width: 100%
+
+
+
+@media (max-width: 330px)
+	.l_nav
+		.l_lg_nav
+			width: 100%
+
+

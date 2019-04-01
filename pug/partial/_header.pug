@@ -1,0 +1,72 @@
+// ------------- nav begin ---------------
+// NAV
+#top
+nav#nav
+	.l_nav.w1200
+		.l_lg_nav
+			// 左側導覽列
+			ul
+				li
+					a(href="index.html") 首頁
+				li
+					a(href="about.html") 關於我們
+				li
+					a(href="product.html") 產品
+				li
+					a(href="#") 最新消息
+
+			// logo
+			a(href="index.html").l_logobox
+				img.l_logo-primary(src="img/nav_logo_bk.svg")
+
+				img.l_logo-white(src="img/nav_logo_w.svg")
+
+			hr
+
+			// 右側導覽列
+			ul
+				li
+					a(href="#") 登入/註冊
+				li
+					a(href="#") 購物車
+				li
+					a(href="#") 聯絡我們
+
+			.l_nav_close
+				i.fas.fa-times
+
+			.l_menu_social
+				.e_social_icon
+					a(href="#")
+						.fab.fa-facebook-f
+
+					a(href="#")
+						.fab.fa-instagram
+
+					a(href="#")
+						.fab.fa-twitter
+
+					a(href="#")
+						.fas.fa-globe-americas
+
+		.overlay
+
+
+		.l_mobie_nav
+			// 手機版顯示
+			a(href="index.html").l_logobox
+				img.l_logo-primary(src="img/nav_logo_bk.svg")
+				img.l_logo-white(src="img/nav_logo_w.svg")
+
+			.l_hamburger
+				i.fas.fa-bars
+
+
+// ------------- nav end ---------------
+
+// -------------- scroll top -----------------
+
+a(href="#top").e_scroll_top
+	i.fas.fa-angle-up
+
+

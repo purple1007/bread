@@ -1,0 +1,130 @@
+extends layout.pug
+block content
+	// ------------- product begin ---------------
+
+	// -----  kv
+	section.l_kv#top
+		.l_photobox(style="background-image: url('img/product/hero.png')")
+
+	section.p_product_category
+		.w1200
+			.e_titlebox.col33.reveal_bottom
+				img.e_title_icon(src="img/product_icon.svg")
+				.e_title
+					h1 產品
+					h1.enh1 Product List
+
+			.col66.p_product_category_img
+				figure.col33.e_product_category_card.reveal_bottom
+					a(href="product.html")
+						img(src="img/product/product_a.png")
+						.e_product_category_title
+							p 可頌系列
+							p Croissant
+
+				figure.col33.e_product_category_card.reveal_bottom
+					a(href="product.html")
+						img(src="img/product/product_b.png")
+						.e_product_category_title
+							p 吐司系列
+							p Toast
+
+				figure.col33.e_product_category_card.reveal_bottom
+					a(href="product.html")
+						img(src="img/product/product_c.png")
+						.e_product_category_title
+							p 全麥麵包系列
+							p Whole Wheat Bread
+
+
+	section.p_product_category_main_title.w1200
+		.p_product_category_main_img.reveal_bottom
+			img(src="img/product/category_crossant_img.png")
+		.p_product_category_main_text.reveal_bottom
+			.e_titlebox
+				.e_title
+					h1 可頌系列
+					h1.enh1 Croissant
+			p 我們以可頌起家，從一個小攤販開始、只賣3種口味可頌；歷時5年......
+
+	section.w1200
+		ul.p_product_list
+			li.col25.reveal_bottom
+				.e_product_card
+					a.e_product_card_pic(href="#")
+						img(src="img/product/product_a.png")
+					a.e_product_card_name 起司可頌
+					small.e_product_card_info 香濃卡士達起司、搭配經典可頌。
+					b.e_product_card_price NT$ 95
+
+			li.col25.reveal_bottom
+				.e_product_card
+					a.e_product_card_pic(href="#")
+						img(src="img/product/product_a.png")
+					a.e_product_card_name 起司可頌
+					small.e_product_card_info 香濃卡士達起司、搭配經典可頌。
+					b.e_product_card_price NT$ 95
+
+			li.col25.reveal_bottom
+				.e_product_card
+					a.e_product_card_pic(href="#")
+						img(src="img/product/product_a.png")
+					a.e_product_card_name 起司可頌
+					small.e_product_card_info 香濃卡士達起司、搭配經典可頌。
+					b.e_product_card_price NT$ 95
+
+			li.col25.reveal_bottom
+				.e_product_card
+					a.e_product_card_pic(href="#")
+						img(src="img/product/product_a.png")
+					a.e_product_card_name 起司可頌
+					small.e_product_card_info 香濃卡士達起司、搭配經典可頌。
+					b.e_product_card_price NT$ 95
+
+			li.col25.reveal_bottom
+				.e_product_card
+					a.e_product_card_pic(href="#")
+						img(src="img/product/product_a.png")
+					a.e_product_card_name 起司可頌
+					small.e_product_card_info 香濃卡士達起司、搭配經典可頌。
+					b.e_product_card_price NT$ 95
+
+			li.col25.reveal_bottom
+				.e_product_card
+					a.e_product_card_pic(href="#")
+						img(src="img/product/product_a.png")
+					a.e_product_card_name 起司可頌
+					small.e_product_card_info 香濃卡士達起司、搭配經典可頌。
+					b.e_product_card_price NT$ 95
+
+			li.col25.reveal_bottom
+				.e_product_card
+					a.e_product_card_pic(href="#")
+						img(src="img/product/product_a.png")
+					a.e_product_card_name 起司可頌
+					small.e_product_card_info 香濃卡士達起司、搭配經典可頌。
+					b.e_product_card_price NT$ 95
+
+			li.col25.reveal_bottom
+				.e_product_card
+					a.e_product_card_pic(href="#")
+						img(src="img/product/product_a.png")
+					a.e_product_card_name 起司可頌
+					small.e_product_card_info 香濃卡士達起司、搭配經典可頌。
+					b.e_product_card_price NT$ 95
+
+	section.p_product_page
+		.e_page
+			i.fas.fa-chevron-left
+			.e_page_number
+				a(href="#") 1
+				a(href="#") 2
+				a(href="#") 3
+				a(href="#") 4
+			i.fas.fa-chevron-right
+
+block page_js
+	// ------------- about js ---------------
+	script(type='text/javascript').
+		ScrollReveal().reveal('.col25, .p_product_category_main_img, .p_product_category_main_text, .col33.e_product_category_card', {interval: 200}
+		    );

@@ -1,0 +1,108 @@
+/* ----- product ----- */
+.p_product_category
+	padding-bottom: 80px
+	min-width: 310px
+
+	.w1200
+		display: flex
+
+.p_product_category_main_img
+	img
+		+img_shadows
+		width: 466px
+		height: auto
+
+
+.p_product_category_main_title
+	display: flex
+	align-items: center
+	padding-bottom: 80px
+
+	.p_product_category_main_text
+		margin-left: 48px
+
+		.e_title
+			margin-left: 0px
+		p
+			margin-top: 5px
+
+.p_product_list
+	margin-left: -10px
+	margin-right: -10px
+	.e_product_card
+		margin-bottom: 100px
+
+.p_product_page
+	padding-bottom: 60px
+	display: flex
+	justify-content: center
+	margin-top: -10px
+
+@media (max-width: 768px)
+	.p_product_category
+		padding-bottom: 50px
+
+		.w1200
+			flex-direction: column
+
+		.e_titlebox
+			width: 100%
+
+		.p_product_category_img
+			margin-top: 20px
+			width: 100%
+			margin-left: auto
+
+	.p_product_category_main_title
+		flex-direction: column
+		padding-bottom: 40px
+		margin-top: 10px
+
+		.p_product_category_main_img
+			img
+				width: 100%
+
+		.p_product_category_main_text
+			margin-top: 40px
+			margin-left: 0px
+
+	.p_product_list
+		.col25
+			width: 50%
+		.e_product_card
+			margin-bottom: 40px
+
+@media (max-width: 480px)
+	.p_product_list
+		.e_product_card
+			margin-bottom: 20px
+			.e_product_card_pic
+				height: 110px
+
+	.p_product_category_img
+		.e_product_category_card
+			width: 100%
+			text-align: left
+			padding-bottom: 15px
+			padding-top: 10px
+			border-bottom: 1px solid rgba(114,132,145,0.5)
+			margin-left: 0px
+			&:hover
+				background: none
+			a
+				display: flex
+			img
+				height: 60px
+				width: auto
+
+			.e_product_category_title
+				margin-left: 20px
+
+		.e_product_category_card:last-child
+			border-bottom: none
+
+	.p_product_page
+		padding-top: 10px
+		padding-bottom: 40px
+
+

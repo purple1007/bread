@@ -1,0 +1,280 @@
+/* ----- INDEX ----- */
+
+.p_index_news
+	color: white
+	height: 80px
+	margin-top: -80px
+	position: relative
+
+	&:before
+		content: ""
+		background-image: url('../img/index/hero_news_bg.svg')
+		background-size: cover
+		background-position: center top
+		background-repeat: no-repeat
+		height: 0
+		padding-bottom: 150px
+		width: 100%
+		bottom: 0px
+		z-index: -1
+		left: 0
+		position: absolute
+
+	&:after
+		content: ""
+		background-image: url('../img/index/hero_news_cover.svg')
+		background-size: cover
+		background-position: center top
+		background-repeat: no-repeat
+		height: 0
+		padding-bottom: 10%
+		width: 100%
+		bottom: 0px
+		z-index: -1
+		left: 0
+		position: absolute
+
+
+.p_newsbox
+	transform: translateY(-30px)
+	p,a
+		display: inline-block
+	.p_news_date
+		padding-right: 20px
+		border-right: 1px solid white
+	.p_news_title
+		padding-left: 20px
+		cursor: pointer
+		+trans_02s
+		&:hover
+			color: #BDC1C3
+
+
+.p_index_about
+	margin-top: 100px
+	overflow: hidden
+
+	.e_titlebox
+		margin-bottom: 50px
+
+	figure
+		display: flex
+		align-items: flex-start
+		position: relative
+
+		img
+			width: 50%
+			+img_shadows
+
+	.p_index_about_1
+		&:after
+			content: url('../img/index/bg_path_1.svg')
+			position: absolute
+			top: -10%
+			left: 40%
+			z-index: -1
+
+		article
+			margin-top: 200px
+			margin-left: 50px
+			width: 50%
+			min-width: 270px
+
+
+	.p_index_about_2
+		margin-top: 60px
+		flex-direction: row-reverse
+		margin-bottom: 100px
+
+		&:after
+			content: url('../img/index/bg_path_2.svg')
+			position: absolute
+			top: -100px
+			left: 230px
+			z-index: -2
+
+
+		&:before
+			content: url('../img/index/bg_path_3.svg')
+			position: absolute
+			top: -10px
+			left: 120px
+			z-index: -1
+
+		article
+			width: 430px
+			margin-top: 100px
+			margin-right: 147px
+
+
+.p_index_product
+	background-color: rgba(255,255,255,0.5)
+	padding-top: 90px
+	padding-bottom: 90px
+	position: relative
+
+	&:before
+		content: url('../img/index/bg_path_4.svg')
+		position: absolute
+		bottom: 10px
+		right: 0
+		z-index: 0
+
+	.e_product_category_card
+		&:hover
+			background-size: 0px
+
+
+	.e_titlebox
+		margin-bottom: 30px
+
+
+	figure:last-child
+		z-index: 1
+		&:after
+			content: url('../img/index/bg_path_5.svg')
+			position: absolute
+			top: 90px
+			right: -10px
+			z-index: -1
+
+.p_index_news_2
+	padding-top: 70px
+	background-color: #fff
+	padding-bottom: 80px
+	background-image: url('../img/index/bg_path_7.svg')
+	background-size: auto
+	background-position: right bottom
+	background-repeat: no-repeat
+
+	.e_titlebox
+		z-index: 1
+		justify-content: center
+		text-align: center
+		margin-bottom: 50px
+
+
+.p_index_news_2_body
+	width: calc(100% + 30px)
+	transform: translateX(-25px)
+    // transform: translateX(-25px)
+
+.p_index_news_2
+    figure
+        padding-left: 30px
+
+
+.p_index_news_2_more
+	text-align: center
+	margin-top: 60px
+	a
+		font-size: 1.3rem
+
+
+/* ---- INDEX RWD ---- */
+
+@media (max-width: 768px)
+	.p_news
+		&:after
+			padding-bottom: 20%
+
+	.p_index_about
+		figure
+			margin-bottom: 20px
+			width: 80%
+			margin-left: auto
+			margin-right: auto
+
+		.p_index_about_1,.p_index_about_2
+			flex-direction: column
+			img
+				width: 100%
+			article
+				width: 100%
+				margin-left: 0px
+
+
+		.p_index_about_1
+			margin-bottom: 140px
+			&:after
+				width: 80%
+				left: auto
+				right: auto
+				top: 200px
+
+			article
+				margin-top: 30px
+
+		.p_index_about_2
+			&:after
+				width: 80%
+				left: -20px
+				top: 50px
+
+			&:before
+				top: 180px
+				left: -150px
+
+			article
+				margin-top: 40px
+
+	.p_index_product
+		figure
+			img
+				width: 80%
+		figure:last-child
+			&:after
+				top: 10px
+
+	.p_index_news_2_body
+		width: 100%
+		transform: translateX(5px)
+
+		figure
+			padding: 0
+			width: 100%
+			margin-bottom: 50px
+	.p_index_news_2_more
+		margin-top: 20px
+
+
+
+
+@media (max-width: 680px)
+	.p_index_about
+		.p_index_about_1
+			margin-bottom: 60px
+
+	.p_index_product
+		padding-bottom: 30px
+		figure,.col33
+			width: 100%
+			margin-left: auto
+			margin-right: auto
+			margin-bottom: 50px
+
+			img
+				width: 50%
+
+
+
+		.product_category_title
+			margin-top: 0px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

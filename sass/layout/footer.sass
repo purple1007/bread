@@ -1,0 +1,78 @@
+/* ----- FOOTER ----- */
+footer 
+	width: 100%
+	background-color: $footerbg
+
+.l_footer_loogo
+	margin-left: -5px
+
+.l_footer_note
+	margin-left: -5px
+	margin-top: 10px
+	margin-bottom: 15px
+
+.l_footer
+	color: white
+	padding-bottom: 85px
+	padding-top: 90px
+	.col33:last-child
+		transform: translateY(-45px)
+
+.l_footer_social
+	margin-bottom: 15px
+	display: flex
+	justify-content: flex-end
+	.e_social_icon
+		a 
+			+hover_maincolor
+
+
+
+.l_copyright
+	color: white
+	background-color: $footer_copyright_bg
+	padding-top: 10px
+	padding-bottom: 10px
+	width: 100%
+
+/* ---- mobile footer ---- */
+
+@media (max-width: 768px)
+	.l_footer_social
+		justify-content: center
+
+	.l_footer
+		padding-top: 70px
+		padding-bottom: 60px
+		.col33
+			width: 50%
+			margin-top: 20px
+			margin-left: 0px
+
+		.col33:last-child
+			display: flex
+			
+			align-items: center
+			flex-direction: column
+			width: 100%
+			transform: translateY(0px)
+
+	.e_form
+		width: 80%
+	.l_footer_note,.l_footer_note,.l_footer_loogo
+		margin-left: 0px
+
+
+
+@media (max-width: 680px)
+	.l_footer
+		padding-top: 50px
+
+		.col33
+			width: 100%
+
+	.l_footer_note
+		margin-bottom: 0px
+
+	.e_form
+		width: 100%
