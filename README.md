@@ -4,7 +4,7 @@
 其中有幾個練習重點：
 1. 使用 XD 設計稿件
 
-   [設計稿連結](https://xd.adobe.com/spec/a8174657-74a4-4c85-a0f5-5831b1390d10-fd44/ "Bread 設計稿") 
+   [設計稿連結](https://xd.adobe.com/spec/3a896383-d973-4521-450d-a2c5f979bf6b-4cb8/ "Bread 設計稿") 
 
 2. 使用 Sass / Pug 撰寫 
 
