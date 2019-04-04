@@ -1,5 +1,5 @@
 # bread 麵包網站
-   [連結](https://purple1007.github.io/bread/)
+   [網站連結](https://purple1007.github.io/bread/)
 
 這是第一次嘗試寫一個靜態網站[包含多內頁、產品頁等的網站]。
 
