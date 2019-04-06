@@ -2,16 +2,19 @@
 
 // 以下為 sass 會使用到的變數
 
-
 // color
-$bg: #F4F2F0
-$maincolor: #728491
-$red: #F79482
-$enh1color: #E5B9AA
-$green: #86C6C9
-$gray: #E5E6E5
-$footerbg: #475158
-$footer_copyright_bg: #3B4046
+$bg-white: #F4F2F0
+$bg-footer: #475158
+$bg-footer_copyright: #3B4046
+
+$color-primary: #728491
+$color-red: #F79482
+$color-green: #86C6C9
+$color-gray: #E5E6E5
+$color-white: #ffffff
+
+$text_En1_color: #E5B9AA
+
 
 // borer-radius
 $xs-radius: 3px
@@ -31,12 +34,12 @@ $l-radius: 15px
 @mixin hover_red
 	&:hover
 		+trans_03s
-		color: $red
+		color: $color-red
 
 @mixin hover_maincolor
 	&:hover
 		+trans_03s
-		color: $maincolor
+		color: $color-primary
 
 // hover+底線
 @mixin hover_border
@@ -49,13 +52,13 @@ $l-radius: 15px
 	  display: inline-block
 	  width: calc(100% - 2px)
 	  height: 2px
-	  background-color: $red
+	  background-color: $color-red
 	  bottom: -7px
 	  opacity: 0
 	  +trans_03s
 
 	&:hover
-	  color: $red
+	  color: $color-red
 
 	&:hover:before
 	  content: ""

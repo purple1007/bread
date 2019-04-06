@@ -1,0 +1,187 @@
+extends layout.pug
+block content
+    // ------------- product info begin ---------------
+
+    // -----  kv
+    section.l_kv#top
+        .l_photobox(style="background-image: url('img/product/hero.png')")
+
+    section.p_product_category
+        .w1200
+            .e_titlebox.col33.reveal_bottom
+                img.e_title_icon(src="img/product_icon.svg")
+                .e_title
+                    h1 產品
+                    h1.enh1 Product List
+
+            .col66.p_product_category_img
+                figure.col33.e_product_category_card.reveal_bottom
+                    a(href="product.html")
+                        img(src="img/product/product_a.png")
+                        .e_product_category_title
+                            p 可頌系列
+                            p Croissant
+
+                figure.col33.e_product_category_card.reveal_bottom
+                    a(href="product.html")
+                        img(src="img/product/product_b.png")
+                        .e_product_category_title
+                            p 吐司系列
+                            p Toast
+
+                figure.col33.e_product_category_card.reveal_bottom
+                    a(href="product.html")
+                        img(src="img/product/product_c.png")
+                        .e_product_category_title
+                            p 全麥麵包系列
+                            p Whole Wheat Bread
+
+    section.p_product_info_back.w1200
+        a(href="product.html")
+            i.fas.fa-angle-left
+            span 回到產品列表
+
+    section.p_product_info_body.w1200
+        .col50.p_product_info_body_img
+            #info_img.reveal_bottom
+                .p_product_info_img_main(style="background-image: url('img/product/bakery_3.png')")
+            .p_product_info_img_loop.owl-carousel.owl-theme.reveal_bottom
+                .item
+                    img.imgbox(data-item="1" src="img/product/bakery_1.png")
+                .item
+                    img.imgbox(data-item="2" src="img/product/bakery_2.png")
+                .item
+                    img.imgbox(data-item="3" src="img/product/bakery_3.png")
+
+
+        .col50.p_product_info_body_info
+            h2.reveal_bottom 起司可頌
+            .p_product_info_body_text.reveal_bottom
+                p 香濃卡士達起司、搭配經典可頌。
+                p 起司可頌已經是暢銷產品，外酥內軟再加上香濃的起司風味，總是讓少女們為之瘋狂！
+                p 每日現做 100 個，12點出爐總能在短短4小時內搶購一空！ 如果想購買大量，還得提前預訂呢！
+            b.p_product_info_body_count.reveal_bottom 單價：NT$ 95 元/個
+
+            .p_product_info_body_num.reveal_bottom
+                b 數量：
+                .e_porduct_num_body
+                  .e_product_num
+                    i.minus.fas.fa-minus
+                    .num 0
+                    i.add.fas.fa-plus
+
+            .p_product_info_btn.reveal_bottom
+                a.btn_main.addcar(href="#")
+                    i.fas.fa-shopping-cart
+                    span 加入購物車
+                a.btn_main.addlike(href="#")
+                    i.fas.fa-heart
+                    span 加入收藏
+
+            .p_product_info_detail.reveal_bottom
+                b 產品資訊
+                ul
+                    li 原料：高筋麵粉、卡士達起司、奶粉、即發酵母、砂糖、鹽、有機雞蛋
+                    li 熱量 (kcal) : 406kcal
+                    li 脂肪：21g
+                    li 碳水化合物：46g
+                    li 保存期限：常溫2天，建議當天使用完畢
+
+            .p_product_info_detail_link.reveal_bottom
+                a(href="#") 配送和運費
+                a(href="#") 麵包保存方式
+                a(href="#") 常見問題
+
+            .p_product_info_share.e_share_link.reveal_bottom
+                a(href="#").e_share_btn.share-color
+                    i.fas.fa-share
+                    span 連結分享
+                a(href="#").e_share_btn.twitter-color
+                    i.fab.fa-twitter
+                    span 推文
+                a(href="#").e_share_btn.fb-color
+                    i.fab.fa-facebook-f
+                    span 分享
+                a(href="#").e_share_btn.pint-color
+                    i.fab.fa-pinterest-p
+                    span SAVE
+                a(href="#").e_share_btn.line-color
+                    img(src="img/line_icon.svg")
+                    span 分享
+
+
+
+
+
+block page_js
+    // ------------- about js ---------------
+
+    script(type='text/javascript').
+
+        // 產品圖片導覽列點擊，產品大圖跟著切換
+        var info_img = document.getElementById('info_img');
+        var img_loop = document.querySelector('.p_product_info_img_loop');
+
+        var img_item =[
+        {"item":"img/product/bakery_1.png"},
+        {"item":"img/product/bakery_2.png"},
+        {"item":"img/product/bakery_3.png"},
+        ]
+
+        function checkimg(e){
+            var str ='';
+            var num = e.target.dataset.item;
+            if(e.target.nodeName !== "IMG"){return};
+            console.log("點擊圖片編號"+num);
+            var imgnum = num-1;
+            str='<div class="p_product_info_img_main" style="background-image: url('+img_item[imgnum].item+')"></div>';
+            console.log(img_item[imgnum].item);
+            info_img.innerHTML = str;
+        }
+        img_loop.addEventListener("click",checkimg,false);
+
+        // 產品導覽列
+        $('.p_product_info_img_loop').owlCarousel({
+            loop:true,
+            margin:20,
+            nav:false,
+            responsive:{
+                0:{
+                    items:1
+                },
+                700:{
+                    items:3
+                },
+                1000:{
+                    items:5
+                }
+            }
+        });
+
+        // 產品數量計算
+        var product_num = 0;
+
+        function click(num_var){
+           product_num=product_num+num_var;
+           $(".e_product_num .num").text(product_num);
+        };
+
+        $(".e_product_num .minus").click(
+          function(){
+            if(product_num == 0){return}
+            else{
+              click(-1);
+            };
+          }
+        );
+
+        $(".e_product_num .add").click(
+          function(){
+            click(+1);
+          }
+        );
+
+
+
+
+
