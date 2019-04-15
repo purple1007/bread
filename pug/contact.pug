@@ -1,0 +1,58 @@
+extends layout.pug
+block content
+    // ------------- contact begin ---------------
+
+    // -----  kv
+    section.l_kv#top
+        .l_photobox(style="background-image: url('img/contact/hero.png')")
+
+    section.p_contact_title
+        .w1200
+            .e_titlebox.reveal_bottom
+                    img.e_title_icon(src="img/about_icon.svg")
+                    .e_title
+                        h1 聯絡我們
+                        h1.enh1 Contact us
+    section.p_contact_body
+        .w900
+            b 有任何問題都歡迎和我們聯絡!
+
+            .p_contact_storinfo
+                .col50.p_contact_body_left
+                    p 東京都渋谷区桜丘町 15-8-420
+                    p bread@mail.com
+                    p 123-456-689
+
+                .col50.p_contact_body_right
+                    b 營業時間
+                    p 週二 至 週日 ｜ AM 09:00 ~ PM 10:00
+                    p 每週一 公休
+
+            hr
+            b 也可以在以下追蹤我們！:)
+
+            .p_contact_social
+                .e_social_icon
+                    a(href="#")
+                        .fab.fa-facebook-f
+
+                    a(href="#")
+                        .fab.fa-instagram
+
+                    a(href="#")
+                        .fab.fa-twitter
+
+
+
+
+
+    section.l_map.reveal_bottom
+        .l_map_pin_box
+            .l_map_pin_text_body
+                .l_map_pin_text
+                    p 我們在這裡喔！
+            img.l_map_pin_icon(src="img/contact/map_pin.svg")
+
+
+
+block page_js

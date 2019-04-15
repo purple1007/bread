@@ -340,7 +340,8 @@ nav {
       position: relative;
       -webkit-transition: 0.3s ease;
       -o-transition: 0.3s ease;
-      transition: 0.3s ease; }
+      transition: 0.3s ease;
+      font-weight: 500; }
       .l_nav .l_lg_nav li > a:before {
         content: "";
         position: absolute;
@@ -405,6 +406,8 @@ nav {
     display: none; }
   .transparent_nav .l_logobox .l_logo-white {
     display: block; }
+  .transparent_nav .l_lg_nav li a {
+    font-weight: 300; }
 
 /* ---- mobile nav ---- */
 @media (max-width: 768px) {
@@ -1967,3 +1970,37 @@ footer {
   .p_product_info_body .p_product_info_body_info {
     padding-left: 5px;
     margin-top: 20px; } }
+
+/* ----- Contact ----- */
+.p_contact_title {
+  margin-bottom: 100px; }
+
+.p_contact_body {
+  margin-bottom: 100px; }
+  .p_contact_body hr {
+    border-bottom: 1px solid #728491;
+    width: 15%;
+    margin-bottom: 30px; }
+
+.p_contact_storinfo {
+  margin-top: 30px;
+  margin-bottom: 40px; }
+
+.p_contact_social {
+  margin-top: 10px; }
+  .p_contact_social .e_social_icon {
+    width: 135px; }
+
+@media (max-width: 680px) {
+  .p_contact_title {
+    margin-bottom: 50px;
+    margin-top: 50px; }
+  .p_contact_body {
+    margin-bottom: 70px; }
+  .p_contact_storinfo {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+    .p_contact_storinfo .col50 {
+      width: 100%;
+      margin-bottom: 15px;
+      margin-left: 0px; } }
