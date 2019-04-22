@@ -1,0 +1,138 @@
+extends layout.pug
+block content
+	// ------------- News list begin ---------------
+
+	// -----  kv
+	section.l_kv#top
+		.l_photobox(style="background-image: url('img/news/hero.png')")
+	section.l_kv_cover
+
+	section.w1200
+		.e_titlebox
+			img.e_title_icon(src="img/about_icon.svg")
+			.e_title
+				h1 最新消息
+				h1.enh1 News
+
+	section.w1200
+		.p_news_list_body
+			figure(href="#").col33
+				.e_news_card.reveal_bottom
+					.e_news_card_imgcover(style="background-image: url('img/news/news_banner_1.png')")
+						.overlay
+							a.btn_border_readmore(href="#") Readmore
+					.e_news_card_tabbox
+						p.e_news_card_tab 店舖活動
+						p.e_news_card_date 2019.02.09 Sat
+					a(href="#").e_news_card_title 全新系列麵包開催！
+
+			figure(href="#").col33
+				.e_news_card.reveal_bottom
+					.e_news_card_imgcover(style="background-image: url('img/news/news_banner_2.png')")
+						.overlay
+							a.btn_border_readmore(href="#") Readmore
+					.e_news_card_tabbox
+						p.e_news_card_tab 其他
+						p.e_news_card_date 2019.02.12 Mon
+					a(href="#").e_news_card_title 03月份麵包烘焙課程開放報名！
+
+			figure(href="#").col33
+				.e_news_card.reveal_bottom
+					.e_news_card_imgcover(style="background-image: url('img/news/news_banner_3.png')")
+						.overlay
+							a.btn_border_readmore(href="#") Readmore
+					.e_news_card_tabbox
+						p.e_news_card_tab 店舖活動
+						p.e_news_card_date 2019.02.15 Tue
+					a(href="#").e_news_card_title 經典店低卡麵包重新上架販售！
+
+			figure(href="#").col33
+				.e_news_card.reveal_bottom
+					.e_news_card_imgcover(style="background-image: url('img/news/news_banner_1.png')")
+						.overlay
+							a.btn_border_readmore(href="#") Readmore
+					.e_news_card_tabbox
+						p.e_news_card_tab 店舖活動
+						p.e_news_card_date 2019.02.09 Sat
+					a(href="#").e_news_card_title 全新系列麵包開催！
+
+			figure(href="#").col33
+				.e_news_card.reveal_bottom
+					.e_news_card_imgcover(style="background-image: url('img/news/news_banner_2.png')")
+						.overlay
+							a.btn_border_readmore(href="#") Readmore
+					.e_news_card_tabbox
+						p.e_news_card_tab 其他
+						p.e_news_card_date 2019.02.12 Mon
+					a(href="#").e_news_card_title 03月份麵包烘焙課程開放報名！
+
+			figure(href="#").col33
+				.e_news_card.reveal_bottom
+					.e_news_card_imgcover(style="background-image: url('img/news/news_banner_3.png')")
+						.overlay
+							a.btn_border_readmore(href="#") Readmore
+					.e_news_card_tabbox
+						p.e_news_card_tab 店舖活動
+						p.e_news_card_date 2019.02.15 Tue
+					a(href="#").e_news_card_title 經典店低卡麵包重新上架販售！
+
+			figure(href="#").col33
+				.e_news_card.reveal_bottom
+					.e_news_card_imgcover(style="background-image: url('img/news/news_banner_1.png')")
+						.overlay
+							a.btn_border_readmore(href="#") Readmore
+					.e_news_card_tabbox
+						p.e_news_card_tab 店舖活動
+						p.e_news_card_date 2019.02.09 Sat
+					a(href="#").e_news_card_title 全新系列麵包開催！
+
+			figure(href="#").col33
+				.e_news_card.reveal_bottom
+					.e_news_card_imgcover(style="background-image: url('img/news/news_banner_2.png')")
+						.overlay
+							a.btn_border_readmore(href="#") Readmore
+					.e_news_card_tabbox
+						p.e_news_card_tab 其他
+						p.e_news_card_date 2019.02.12 Mon
+					a(href="#").e_news_card_title 03月份麵包烘焙課程開放報名！
+
+			figure(href="#").col33
+				.e_news_card.reveal_bottom
+					.e_news_card_imgcover(style="background-image: url('img/news/news_banner_3.png')")
+						.overlay
+							a.btn_border_readmore(href="#") Readmore
+					.e_news_card_tabbox
+						p.e_news_card_tab 店舖活動
+						p.e_news_card_date 2019.02.15 Tue
+					a(href="#").e_news_card_title 經典店低卡麵包重新上架販售！
+
+	section.p_product_page
+		.e_page
+			i.fas.fa-chevron-left
+			.e_page_number
+				a(href="#") 1
+				a(href="#") 2
+				a(href="#") 3
+				a(href="#") 4
+			i.fas.fa-chevron-right
+
+
+
+
+
+
+
+
+
+
+
+
+block page_js
+	// ------------- index js ---------------
+	script(type='text/javascript').
+		ScrollReveal().reveal('.e_news_card', {interval: 200}
+		    );
+
+
+
+

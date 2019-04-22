@@ -537,6 +537,11 @@ nav {
     z-index: 1;
     padding-bottom: 10%; }
 
+.l_kv_cover {
+  height: 1px;
+  border-top: 10px solid #F4F2F0;
+  margin-top: -5px; }
+
 .l_photobox {
   top: 0;
   width: 100%;
@@ -1792,7 +1797,9 @@ footer {
   .p_product_list .col25 {
     width: 50%; }
   .p_product_list .e_product_card {
-    margin-bottom: 40px; } }
+    margin-bottom: 40px; }
+  .p_product_page {
+    padding-bottom: 40px; } }
 
 @media (max-width: 480px) {
   .p_product_list .e_product_card {
@@ -1861,12 +1868,15 @@ footer {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin-bottom: 28px; }
+    margin-bottom: 28px;
+    border-radius: 10px; }
   .p_product_info_body_img .p_product_info_img_loop {
     height: 100px;
     width: 100%; }
     .p_product_info_body_img .p_product_info_img_loop .item {
       cursor: pointer; }
+      .p_product_info_body_img .p_product_info_img_loop .item .imgbox {
+        border-radius: 5px; }
 
 .p_product_info_body_info {
   padding-left: 25px; }
@@ -2004,3 +2014,36 @@ footer {
       width: 100%;
       margin-bottom: 15px;
       margin-left: 0px; } }
+
+/* ----- News list ----- */
+.p_news_list_body {
+  margin-top: 45px;
+  margin-left: -25px;
+  margin-right: -32px;
+  margin-bottom: -40px;
+  min-width: 310px; }
+  .p_news_list_body figure {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 100px; }
+
+@media (max-width: 768px) {
+  .p_news_list_body {
+    margin-top: 45px;
+    margin-left: -10px;
+    margin-right: -20px;
+    margin-bottom: -40px; }
+    .p_news_list_body figure {
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-bottom: 60px; }
+      .p_news_list_body figure .e_news_card_imgcover {
+        height: 200px; }
+      .p_news_list_body figure .e_news_card_tab {
+        padding: 2px 10px; } }
+
+@media (max-width: 480px) {
+  .p_news_list_body .col33 {
+    width: 100%; }
+  .p_news_list_body figure .e_news_card_imgcover {
+    height: 300px; } }
