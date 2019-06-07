@@ -1,0 +1,64 @@
+/* ----- account order list ----- */
+.p_order_list
+    width: 100%
+    text-align: center
+    letter-spacing: 1px
+    border: 1px solid $border-table
+    margin-bottom: 20px
+    box-sizing: border-box
+
+    td
+        padding: 10px
+        a
+            font-weight: inherit
+            +hover_red
+
+    thead
+        background-color: $bg-table
+        border: 1px solid $bg-table
+
+    tbody
+        border: 1px solid $border-table
+
+
+
+.p_order_list_page
+    display: flex
+    justify-content: center
+
+
+@media (max-width: 568px)
+
+  .p_order_list
+    text-align: left
+    td
+        padding: 0px
+
+    thead
+        display: none
+
+    tbody td
+      border: none
+      display: block
+      vertical-align: top
+
+      &:before
+        content: attr(data-th) " "
+        display: inline-block
+        font-weight: bold
+        width: 5em
+        margin-right: 10px
+        background: $bg-table
+        padding: 12px
+        text-align: center
+        color: $color-primary
+
+      &.bt-hide
+        display: none
+
+    tbody
+        tr
+            border-bottom: 1px solid $border-table
+
+
+

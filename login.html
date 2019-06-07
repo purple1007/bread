@@ -55,53 +55,28 @@
     </nav>
     <!-- ------------- nav end ----------------->
     <!-- -------------- scroll top -------------------><a class="e_scroll_top" href="#top"><i class="fas fa-angle-up"></i></a>
-    <!-- ------------- contact begin ----------------->
-    <!-- -----  kv-->
-    <section class="l_kv" id="top">
-      <div class="l_photobox" style="background-image: url('img/contact/hero.png')"></div>
-    </section>
-    <section class="l_kv_cover"></section>
-    <section class="p_contact_title">
-      <div class="w1200">
-        <div class="e_titlebox reveal_bottom"><img class="e_title_icon" src="img/about_icon.svg"/>
-          <div class="e_title">
-            <h1>聯絡我們</h1>
-            <h1 class="enh1">Contact us</h1>
-          </div>
+    <!-- ------------- login begin ----------------->
+    <div class="p_login_body">
+      <div class="p_login_table">
+        <div class="p_login_icon"><i class="fas fa-user-circle"></i></div>
+        <h3>會員登入</h3>
+        <div class="p_login_input_body">
+          <div class="p_login_input_text">
+            <label>帳號
+              <input type="text"/>
+            </label>
+            <label>密碼
+              <input type="text"/>
+            </label>
+            <label>
+              <input class="checkbox" type="checkbox"/><span class="radiomark"><i class="fas fa-check"></i></span>
+              <p>記住我</p><a href="#">忘記密碼？</a>
+            </label>
+          </div><a class="btn_main" href="order_list.html">登入</a>
+          <div class="p_login_sign_up"><a href="#">會員註冊</a></div>
         </div>
       </div>
-    </section>
-    <section class="p_contact_body">
-      <div class="w900"><b>有任何問題都歡迎和我們聯絡!</b>
-        <div class="p_contact_storinfo">
-          <div class="col50 p_contact_body_left">
-            <p>東京都渋谷区桜丘町 15-8-420</p>
-            <p>bread@mail.com</p>
-            <p>123-456-689</p>
-          </div>
-          <div class="col50 p_contact_body_right"><b>營業時間</b>
-            <p>週二 至 週日 ｜ AM 09:00 ~ PM 10:00</p>
-            <p>每週一 公休</p>
-          </div>
-        </div>
-        <hr/><b>也可以在以下追蹤我們！:)</b>
-        <div class="p_contact_social">
-          <div class="e_social_icon"><a href="#">
-              <div class="fab fa-facebook-f"></div></a><a href="#">
-              <div class="fab fa-instagram"></div></a><a href="#">
-              <div class="fab fa-twitter"></div></a></div>
-        </div>
-      </div>
-    </section>
-    <section class="l_map reveal_bottom">
-      <div class="l_map_pin_box">
-        <div class="l_map_pin_text_body">
-          <div class="l_map_pin_text">
-            <p>我們在這裡喔！</p>
-          </div>
-        </div><img class="l_map_pin_icon" src="img/contact/map_pin.svg"/>
-      </div>
-    </section>
+    </div>
     <!-- ------------- footer begin ----------------->
     <!-- footer-->
     <footer id="footer">
@@ -146,5 +121,10 @@
     <script src="lib/jquery.basictable.min.js"></script>
     <!-- js-->
     <script src="js/all.js"></script>
+    <!-- ------------- login js ----------------->
+    <script type="text/javascript">
+      ScrollReveal().reveal('.e_news_card', {interval: 200}
+          );
+    </script>
   </body>
 </html>

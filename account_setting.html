@@ -55,53 +55,59 @@
     </nav>
     <!-- ------------- nav end ----------------->
     <!-- -------------- scroll top -------------------><a class="e_scroll_top" href="#top"><i class="fas fa-angle-up"></i></a>
-    <!-- ------------- contact begin ----------------->
-    <!-- -----  kv-->
-    <section class="l_kv" id="top">
-      <div class="l_photobox" style="background-image: url('img/contact/hero.png')"></div>
-    </section>
-    <section class="l_kv_cover"></section>
-    <section class="p_contact_title">
-      <div class="w1200">
-        <div class="e_titlebox reveal_bottom"><img class="e_title_icon" src="img/about_icon.svg"/>
-          <div class="e_title">
-            <h1>聯絡我們</h1>
-            <h1 class="enh1">Contact us</h1>
-          </div>
+    <!-- ------------- account_setting --------------->
+    <div class="l_account_title w1200"><i class="fas fa-user"></i><span>會員專區</span></div>
+    <div class="l_account_body w1200">
+      <div class="l_account_left col20">
+        <ul>
+          <li><a href="order_list.html">訂單查詢</a></li>
+          <li><a class="text-red" href="like_list.html">我的收藏</a></li>
+          <li><a href="account_setting.html">帳號設定</a></li>
+          <li><a href="login.html">登出</a></li>
+        </ul>
+      </div>
+      <div class="l_account_right col50">
+        <div class="l_account_main">
+          <h5>帳號設定</h5>
+          <form class="p_laccount_setting_form">
+            <label for="name">
+              <p>中文全名</p>
+              <input type="text" id="name"/>
+              <div class="gender">
+                <label for="male">
+                  <input class="checkbox" type="radio" name="gender" value="male" id="male"/><span class="radiomark"><i class="fas fa-circle"></i></span>
+                  <p>男</p>
+                </label>
+                <label for="female">
+                  <input class="checkbox" type="radio" name="gender" value="female" id="female"/><span class="radiomark"><i class="fas fa-circle"></i></span>
+                  <p>女</p>
+                </label>
+              </div>
+            </label>
+            <label>E-mail
+              <input type="text"/>
+            </label>
+            <label>聯絡電話
+              <input type="text"/>
+            </label>
+            <label>修改密碼
+              <input type="password"/>
+            </label>
+            <label>密碼確認
+              <input type="password"/>
+            </label>
+            <label>地址
+              <input type="text"/>
+            </label>
+            <label class="ordernews">
+              <input class="checkbox" type="checkbox"/><span class="radiomark"><i class="fas fa-check"></i></span>
+              <p>訂閱電子報</p>
+            </label>
+            <input class="btn_main" type="submit" value="確認送出"/>
+          </form>
         </div>
       </div>
-    </section>
-    <section class="p_contact_body">
-      <div class="w900"><b>有任何問題都歡迎和我們聯絡!</b>
-        <div class="p_contact_storinfo">
-          <div class="col50 p_contact_body_left">
-            <p>東京都渋谷区桜丘町 15-8-420</p>
-            <p>bread@mail.com</p>
-            <p>123-456-689</p>
-          </div>
-          <div class="col50 p_contact_body_right"><b>營業時間</b>
-            <p>週二 至 週日 ｜ AM 09:00 ~ PM 10:00</p>
-            <p>每週一 公休</p>
-          </div>
-        </div>
-        <hr/><b>也可以在以下追蹤我們！:)</b>
-        <div class="p_contact_social">
-          <div class="e_social_icon"><a href="#">
-              <div class="fab fa-facebook-f"></div></a><a href="#">
-              <div class="fab fa-instagram"></div></a><a href="#">
-              <div class="fab fa-twitter"></div></a></div>
-        </div>
-      </div>
-    </section>
-    <section class="l_map reveal_bottom">
-      <div class="l_map_pin_box">
-        <div class="l_map_pin_text_body">
-          <div class="l_map_pin_text">
-            <p>我們在這裡喔！</p>
-          </div>
-        </div><img class="l_map_pin_icon" src="img/contact/map_pin.svg"/>
-      </div>
-    </section>
+    </div>
     <!-- ------------- footer begin ----------------->
     <!-- footer-->
     <footer id="footer">
@@ -146,5 +152,6 @@
     <script src="lib/jquery.basictable.min.js"></script>
     <!-- js-->
     <script src="js/all.js"></script>
+    <!-- 單頁 js 效果-->
   </body>
 </html>

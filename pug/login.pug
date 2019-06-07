@@ -1,0 +1,38 @@
+extends layout.pug
+block content
+    // ------------- login begin ---------------
+    .p_login_body
+        .p_login_table
+            .p_login_icon
+                i.fas.fa-user-circle
+            h3 會員登入
+            .p_login_input_body
+                .p_login_input_text
+                    label 帳號
+                        input(type="text")
+                    label 密碼
+                        input(type="text")
+                    label
+                        input(type="checkbox").checkbox
+                        span.radiomark
+                            i.fas.fa-check
+                        p 記住我
+                        a(href="#") 忘記密碼？
+                a(href="order_list.html").btn_main 登入
+                .p_login_sign_up
+                    a(href="#") 會員註冊
+
+
+
+
+
+
+
+
+
+
+block page_js
+    // ------------- login js ---------------
+    script(type='text/javascript').
+        ScrollReveal().reveal('.e_news_card', {interval: 200}
+            );

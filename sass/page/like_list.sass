@@ -1,0 +1,70 @@
+/* ----- account like list ----- */
+.p_account_like_list
+    margin-right: -17px
+    .col33
+        padding-right: 17px
+        margin-bottom: 25px
+
+    .p_account_like_list_card
+        border: 1px solid rgba(114,132,145,0.5)
+        border-radius: $m-radius
+        padding: 10px
+        position: relative
+
+        label
+            display: inline-block
+            align-items: center
+            position: absolute
+            right: 10px
+            font-size: 1.2rem
+            background-color: #EFECE9
+            padding: 5px
+            border-radius: 50%
+            z-index: 1
+
+
+            input:checked +.radiomark
+                color: #BAC7CC
+                +trans_02s
+
+            .checkbox
+                display: inline-block
+                position: absolute
+                opacity: 0
+                cursor: pointer
+                width: 27px
+                height: 27px
+
+
+
+            .radiomark
+                width: 27px
+                height: 27px
+                display: inline-block
+                text-align: center
+                line-height: 27px
+                cursor: pointer
+                color: $color-red
+
+        // .e_product_card
+        //     margin-top: 20px
+
+
+@media (max-width: 768px)
+
+    .p_account_like_list
+        .col33
+            width: 50%
+
+@media (max-width: 480px)
+
+    .p_account_like_list
+        .col33
+            width: 100%
+            .p_account_like_list_card
+
+                padding: 5px
+
+                label
+                    top: 10px
+

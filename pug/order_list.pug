@@ -1,0 +1,106 @@
+extends layout.pug
+block content
+    // ------------- account order list -------------
+    .l_account_title.w1200
+        i.fas.fa-user
+        span 會員專區
+
+    .l_account_body.w1200
+        .l_account_left.col20
+            ul
+                li
+                    a(href="order_list.html").text-red 訂單查詢
+                li
+                    a(href="like_list.html") 我的收藏
+                li
+                    a(href="account_setting.html") 帳號設定
+                li
+                    a(href="login.html") 登出
+        .l_account_right.col80
+            .l_account_main
+                h5 訂單查詢
+                p.align-right *僅保留 90 天內的訂單資料提供查詢
+                table.p_order_list(rules="all",cellpadding="10")
+                    thead
+                        tr
+                            td 訂單日期
+                            td 訂單編號
+                            td 訂單狀態
+                            td 付款方式
+                            td 訂單取消
+                    tbody
+                        tr
+                            td 2019.01.16
+                            td 01023227
+                            td.text-red 已取消
+                            td 7-11取貨付款
+                            td.text-light 已取消
+
+                        tr
+                            td 2019.01.16
+                            td 01023227
+                            td.text-blue 運送中
+                            td 7-11取貨付款
+                            td
+                                a(href="#") 取消
+                        tr
+                            td 2019.01.16
+                            td 01023227
+                            td.text-red 已取消
+                            td 7-11取貨付款
+                            td.text-light 已取消
+                        tr
+                            td 2019.01.16
+                            td 01023227
+                            td.text-light 已收貨
+                            td 7-11取貨付款
+                            td
+                                a(href="#") 退貨申請
+                        tr
+                            td 2019.01.16
+                            td 01023227
+                            td.text-light 已收貨
+                            td 7-11取貨付款
+                            td
+                                a(href="#") 退貨申請
+                        tr
+                            td 2019.01.16
+                            td 01023227
+                            td.text-light 已收貨
+                            td 7-11取貨付款
+                            td
+                                a(href="#") 退貨申請
+                        tr
+                            td 2019.01.16
+                            td 01023227
+                            td.text-red 退貨進行中
+                            td 7-11取貨付款
+                            td.text-light 已申請退貨
+                        tr
+                            td 2019.01.16
+                            td 01023227
+                            td.text-light 已收貨
+                            td 7-11取貨付款
+                            td
+                                a(href="#") 退貨申請
+
+
+
+                .p_order_list_page
+                    .e_page
+                        i.fas.fa-chevron-left
+                        .e_page_number
+                            a(href="#") 1
+                            a(href="#") 2
+                            a(href="#") 3
+                            a(href="#") 4
+                        i.fas.fa-chevron-right
+
+
+
+block page_js
+    // ------------- js ---------------
+    script(type='text/javascript').
+        $('table').basictable({breakpoint: 568});
+
+

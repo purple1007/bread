@@ -1,0 +1,93 @@
+/* ----- account layout ----- */
+.l_account_title
+    margin-top: 160px
+    font-size: 1.2rem
+    i
+        margin-right: 10px
+    span
+        letter-spacing: 1.5px
+
+.l_account_body
+    margin-top: 20px
+    margin-bottom: 100px
+
+    .l_account_left
+        padding-right: 50px
+
+        ul
+            background-color: $color-white
+            padding-top: 35px
+            padding-bottom: 12px
+            text-align: center
+            border-radius: $m-radius
+            li
+                margin-bottom: 25px
+                a
+                    font-weight: 500
+                    font-size: 1.2rem
+                    +hover_border
+
+    .l_account_right
+        padding-left: 10px
+
+
+        .l_account_main
+            background-color: $color-white
+            border-radius: $m-radius
+            // padding-top: 50px
+            padding: 30px
+
+            h5
+                font-weight: 500
+                // margin-top: 50px
+                margin-bottom: 10px
+.l_account_nav_show
+        margin-top: 0px !important
+        +trans_02s
+
+@media (max-width: 768px)
+
+    .l_account_title
+        display: none
+
+    .l_account_body
+        width: 100%
+        margin-top: 75px
+        margin-bottom: 80px
+
+        .l_account_left
+            width: 100%
+            position: fixed
+            padding-right: 0px
+            margin-left: 0px
+            z-index: 2
+            margin-top: -75px
+            +trans_02s
+            box-shadow: 0px 3px 10px rgba(78,50,35,0.2)
+
+            ul
+                padding-top: 16px
+                padding-bottom: 20px
+                border-radius: 0px
+                display: flex
+                justify-content: space-around
+
+                li
+                    margin-bottom: 0px
+
+        .l_account_right
+            width: 100%
+            padding: 15px
+            margin-left: 0px
+
+            .l_account_main
+                margin: 0px
+
+@media (max-width: 480px)
+    .l_account_body
+        margin-bottom: 40px
+
+        .l_account_right
+            .l_account_main
+                margin-top: 70px
+

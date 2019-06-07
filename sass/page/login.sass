@@ -1,0 +1,106 @@
+/* ----- login_sass ----- */
+.p_login_body
+    width: 100%
+    background-color: #DEDEDE
+    display: flex
+    align-items: center
+    justify-content: center
+
+.p_login_table
+    padding: 50px 100px
+    border-radius: $m-radius
+    background-color: $bg-white
+    margin-top: 230px
+    margin-bottom: 140px
+    box-shadow: 0px 7px 9px rgba(0,0,0,0.2)
+
+    .p_login_icon
+        text-align: center
+        font-size: 2.3rem
+        margin-bottom: 5px
+    h3
+        font-weight: 400
+        text-align: center
+    label
+        display: block
+        margin-bottom: 30px
+        width: 300px
+        border-bottom: 1px solid $color-primary
+        padding-bottom: 5px
+
+    input
+        background-color: transparent
+
+    label
+        &:last-child
+            display: flex
+            align-items: center
+            border: none
+            position: relative
+            p
+                margin-left: 10px
+            a
+                position: absolute
+                right: 0
+                +hover_red
+
+    input:checked +.radiomark
+        color: $color-white
+        background-color: $color-primary
+        +trans_02s
+
+        i
+            opacity: 1
+
+    .checkbox
+        display: inline-block
+        position: absolute
+        opacity: 0
+        cursor: pointer
+        width: 25px
+        height: 25px
+
+
+    .radiomark
+        width: 25px
+        height: 25px
+        display: inline-block
+        border-radius: $s-radius
+        border: 1px solid $color-primary
+        text-align: center
+        line-height: 25px
+        cursor: pointer
+
+        i
+            opacity: 0
+    .btn_main
+        display: block
+        margin-bottom: 20px
+        text-align: center
+
+    .p_login_sign_up
+        text-align: center
+        display: block
+        a
+            +hover_border
+
+@media (max-width: 768px)
+    .p_login_table
+        padding: 40px 80px
+        margin-top: 200px
+
+@media (max-width: 480px)
+    .p_login_table
+        padding: 30px 30px
+        margin-top: 150px
+        margin-bottom: 100px
+        label
+            width: 250px
+
+
+
+
+
+
+
+
