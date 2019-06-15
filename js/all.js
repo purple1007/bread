@@ -74,17 +74,3 @@ window.addEventListener('scroll', function(){
 });
 
 
-// account_layout (for mobile)
-var account_nav = document.querySelector('.l_account_left').classList;
-var lastScrollY2 = 0;
-window.addEventListener('scroll', function(){
-  // let lastScrollY = 0;
-  let st = this.scrollY;
-  var mediaWith = document.body.scrollWidth;
-  if( st < lastScrollY2 && mediaWith < 768) {
-    account_nav.add('l_account_nav_show');
-  }else{
-    account_nav.remove('l_account_nav_show');
-  }
-  lastScrollY2 = st;
-});

@@ -1,6 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="270.099" height="228.757" viewBox="0 0 270.099 228.757">
-  <g id="Group_144" data-name="Group 144" transform="translate(-318.242 -1344.69) rotate(2)">
-    <path id="Path_93" data-name="Path 93" d="M113.762.154C9.107,3.828-18.777,80.1,11.527,129.988S76.47,136.2,141.136,190.507s118.74-34.718,111.122-82.885S218.417-3.521,113.762.154Z" transform="translate(624.82 1552.586) rotate(-177)" fill="#fff" opacity="0.594"/>
-    <circle id="Ellipse_8" data-name="Ellipse 8" cx="9.869" cy="9.869" r="9.869" transform="translate(558.81 1349.65)" fill="#fff" opacity="0.684"/>
-  </g>
-</svg>
+<svg height="228.757" viewBox="0 0 270.099 228.757" width="270.099" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path d="m113.762.154c-104.655 3.674-132.539 79.946-102.235 129.834s64.943 6.212 129.609 60.519 118.74-34.718 111.122-82.885-33.841-111.143-138.496-107.468z" opacity=".594" transform="matrix(-.99619469601 -.08715574979 .08715574979 -.99619469601 252.0129032936 228.75611677638)"/><circle cx="9.869" cy="9.869" opacity=".684" r="9.869" transform="matrix(.99939083 .0348995 -.0348995 .99939083 193.1254795373 23.6400233045)"/></g></svg>

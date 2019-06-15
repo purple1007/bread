@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="lib/owl.carousel.min.css"/>
     <link rel="stylesheet" href="lib/owl.theme.default.min.css"/>
     <link rel="stylesheet" href="lib/basictable.css"/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="lib/fontawesome/css/all.css"/>
     <script src="lib/scrollreveal.min.js"></script>
     <!--css-->
     <link rel="stylesheet" href="css/style.css"/>
@@ -152,6 +152,22 @@
     <script src="lib/jquery.basictable.min.js"></script>
     <!-- js-->
     <script src="js/all.js"></script>
-    <!-- 單頁 js 效果-->
+    <!-- ------------- page js ----------------->
+    <script type="text/javascript">
+       // account_layout (for mobile)
+      var account_nav = document.querySelector('.l_account_left').classList;
+      var lastScrollY2 = 0;
+      window.addEventListener('scroll', function(){
+        // let lastScrollY = 0;
+        let st = this.scrollY;
+        var mediaWith = document.body.scrollWidth;
+        if( st < lastScrollY2 && mediaWith < 768) {
+          account_nav.add('l_account_nav_show');
+        }else{
+          account_nav.remove('l_account_nav_show');
+        }
+        lastScrollY2 = st;
+      });
+    </script>
   </body>
 </html>
