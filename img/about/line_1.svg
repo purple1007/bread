@@ -1,1 +1,10 @@
-<svg height="615" viewBox="0 0 415 615" width="415" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><clipPath id="a"><path d="m812 0h415v615h-415z"/></clipPath><g clip-path="url(#a)" transform="translate(-812)"><path d="m4825.281 3573.828c29.708-160.771 653.021-232.351 691.2-692.187s-606.913-430.658-832.765-644.141-173.248-710.76 183.144-755.777 573.236-231.984 549.953-567.093-389.446-359.838-396.035-510.061 54.789-165.4 255.513-238.569 16.135-513.308-340.026-417" fill="none" opacity=".326" stroke="#728491" stroke-dasharray="6 5" transform="translate(-4140 251)"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="415" height="615" viewBox="0 0 415 615">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_461" data-name="Rectangle 461" width="415" height="615" transform="translate(812)" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_19" data-name="Mask Group 19" transform="translate(-812)" clip-path="url(#clip-path)">
+    <path id="Path_31" data-name="Path 31" d="M4825.281,3573.828c29.708-160.771,653.021-232.351,691.2-692.187s-606.913-430.658-832.765-644.141-173.248-710.76,183.144-755.777,573.236-231.984,549.953-567.093-389.446-359.838-396.035-510.061,54.789-165.4,255.513-238.569,16.135-513.308-340.026-417" transform="translate(-4140 251)" fill="none" stroke="#728491" stroke-width="1" stroke-dasharray="6 5" opacity="0.326"/>
+  </g>
+</svg>
