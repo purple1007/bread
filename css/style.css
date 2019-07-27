@@ -21,12 +21,14 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   font: inherit;
-  color: inherit; }
+  color: inherit;
+  font-family: 'Roboto', 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
+  font-weight: 300; }
 
 body {
   position: relative; }
 
-h1, h2, h3, h4, p, a, small, ul, li {
+h1, h2, h3, h4, p, a, small, ul, li, span {
   padding: 0;
   margin: 0;
   font-weight: inherit;
@@ -171,10 +173,11 @@ ul, li {
 /* ----- FONT ----- */
 h1, h2, h3, h4, h5, h6, a, p, b, small {
   font: inherit;
-  color: inherit; }
+  color: inherit;
+  font-family: inherit; }
 
 h1, h2, h3, h4, h5, h6, p, a {
-  font-family: 'Roboto', 'Noto Sans TC', 'å¾®è»Ÿæ­£é»‘é«”', 'Microsoft JhengHei', sans-serif;
+  font-family: 'Roboto', 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
   font-weight: 300;
   line-height: 1.8em; }
 
